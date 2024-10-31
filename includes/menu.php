@@ -1,9 +1,8 @@
 <div>
     <nav>  
-        <a href="index.php">Home</a>
-        <a href="nosotros.php">Nosotros</a>
-        <a href="">Anuncios</a>
-        <a href="contactanos.php">Contacto</a>
-        <a href="blog.php">Blog</a>
+        <a href="/">Home</a>
+        <a href="createSellers.php">Sellers</a>
+        <a href="createProperties.php">Properties</a>
+        <a href="createSales.php">Sales</a>
     </nav>
 </div>

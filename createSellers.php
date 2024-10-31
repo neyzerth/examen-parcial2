@@ -5,9 +5,8 @@
     $db = connectdb();
 
     // Verificar si hay datos enviados por POST
-    if ($_SERVER['REQUEST_METHOD'] != 'POST') {
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-        $id = $_POST["id"];
         $name = $_POST["name"];
         $email = $_POST["email"];
         $phone = $_POST["phone"];
@@ -21,14 +20,12 @@
         try {
 
             $response = mysqli_query($db, $query);
-            echo "Propiedad Creado!";
+            echo "<p>Seller Created!<p>";
 
-            header("Location: createSellers.php");
-            exit();
 
         } catch (Exception  $e) {
 
-            echo "<p>Error: Seller No Creada: ".$e."<p>";
+            echo "<p>Error: Seller not created: {$e->getMessage()}<p>";
         
         }
 
@@ -42,10 +39,6 @@
         <form action="createSellers.php" method="post">
             <fieldset>
                 <legend>Fill all Fields to Create a New Seller</legend>
-                <div>
-                    <label for="id">ID</label>
-                    <input type="number" id="id" name="id">
-                </div>
                 <div>
                     <label for="name">Name</label>
                     <input required type="text" id="name" name="name" placeholder="Enter Your Name">

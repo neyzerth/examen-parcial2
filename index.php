@@ -1,10 +1,8 @@
 <?php 
     include "includes/header.php";
-    
-    
 ?>
-    <section>
-        <h2>Mas sobre Nosotros</h2>
+    <main>
+        <h2>Advantages!</h2>
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock" width="84" height="84" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -32,133 +30,9 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore illum sunt recusandae quae</p>
 
         </div>
-    </section>
-    
-    <main>
-        <section>
-            <h2>Casas y Depas en Venta</h2>
-            <div>
-                <!-- imagen -->
-                 <sub>
-                    <h3>Casa de Lujo en el Lago</h3>
-                    $111,111,111
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ripple" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 7c3 -2 6 -2 9 0s6 2 9 0" />
-                        <path d="M3 17c3 -2 6 -2 9 0s6 2 9 0" />
-                        <path d="M3 12c3 -2 6 -2 9 0s6 2 9 0" />
-                      </svg>
-                      6
-                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ambulance" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                        <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                        <path d="M5 17h-2v-11a1 1 0 0 1 1 -1h9v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
-                        <path d="M6 10h4m-2 -2v4" />
-                      </svg>
-                      2
-                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lamp" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M9 20h6" />
-                        <path d="M12 20v-8" />
-                        <path d="M5 12h14l-4 -8h-6z" />
-                      </svg>
-                      3
-                      <a href="">Ver Propiedad</a>
-                 </sub>
-            </div>
-            <div>
-                <h3>Casa Terminados de Lujo</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore illum sunt recusandae quae</p>
-                $111,111,111
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ripple" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M3 7c3 -2 6 -2 9 0s6 2 9 0" />
-                    <path d="M3 17c3 -2 6 -2 9 0s6 2 9 0" />
-                    <path d="M3 12c3 -2 6 -2 9 0s6 2 9 0" />
-                  </svg>
-                  6
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ambulance" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                    <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                    <path d="M5 17h-2v-11a1 1 0 0 1 1 -1h9v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
-                    <path d="M6 10h4m-2 -2v4" />
-                  </svg>
-                  2
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lamp" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M9 20h6" />
-                    <path d="M12 20v-8" />
-                    <path d="M5 12h14l-4 -8h-6z" />
-                  </svg>
-                  3
-                  <a href="">Ver Propiedad</a>
-            </div>
-            
-            <div>
-                <h3>Casa Con Alberca</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore illum sunt recusandae quae</p>
-                $111,111,111
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ripple" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M3 7c3 -2 6 -2 9 0s6 2 9 0" />
-                    <path d="M3 17c3 -2 6 -2 9 0s6 2 9 0" />
-                    <path d="M3 12c3 -2 6 -2 9 0s6 2 9 0" />
-                  </svg>
-                  6
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ambulance" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                    <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                    <path d="M5 17h-2v-11a1 1 0 0 1 1 -1h9v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
-                    <path d="M6 10h4m-2 -2v4" />
-                  </svg>
-                  2
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lamp" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M9 20h6" />
-                    <path d="M12 20v-8" />
-                    <path d="M5 12h14l-4 -8h-6z" />
-                  </svg>
-                  3
-                  <a href="">Ver Propiedad</a>
-
-            </div>
-            <a href="">Ver Todas</a>
-        </section>
     </main>
-
-    <section>
-        <h2>Encuentra la Casa de tus Sueños</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore illum sunt recusandae quae</p>
-        <a href="Contactanos"></a>
-    </section>
-
-    <section>
-        <div>
-            <h2>Nuestro Blog</h2>
-            <div>
-                <h3>Terraza en el Techo de tu Casa</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore illum sunt recusandae quae</p>
-
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore eos in animi harum assumenda rem illum cumque quos voluptas sapiente. Voluptas veritatis deserunt perferendis in quisquam saepe provident dolorem iure.</p>
-            </div>
-            <div>
-                
-                <div>
-                    <h3>Guia para la Decoracion de tu Hogar</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore illum sunt recusandae quae</p>
     
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore eos in animi harum assumenda rem illum cumque quos voluptas sapiente. Voluptas veritatis deserunt perferendis in quisquam saepe provident dolorem iure.</p>
-            </div>
-        </div>
-        <div>
-            <h3>Testimonios</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, esse similique suscipit laboriosam delectus natus beatae porro veritatis alias, autem sit corporis incidunt tenetur corrupti qui odit ipsam officia repudiandae.</p>
-        </div>
-    </section>
-
+    
 <?php 
     include("includes/footer.php");
 ?>

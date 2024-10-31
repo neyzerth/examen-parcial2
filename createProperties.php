@@ -1,16 +1,12 @@
 <?php
     include "includes/header.php";
     require "includes/config/connectdb.php";
-
     
-    //var_dump($_POST);
+    $db = connectdb();
     
     // Verificar si hay datos enviados por POST
     if($_SERVER['REQUEST_METHOD']=='POST'){
-        echo "<p>METODO POST<p>";
-        $db = connectdb();
 
-        $id = $_POST['id'];
         $title = $_POST['title'];
         $price = $_POST['price'];
         $image = $_POST['image'];
@@ -18,22 +14,31 @@
         $rooms = $_POST['rooms'];
         $wc = $_POST['wc'];
         $timestamp = $_POST['timestamp'];
-        $id_seller = $_POST['seller'];
+        $id_seller = $_POST['seller_id'];
 
         $query = "INSERT INTO propierties (title, price, image, description, rooms, wc, timestamp, id_seller) VALUES "
-                        ."('$title', '$price', '$image', '$description', '$rooms', '$wc', '$timestamp', '$id_seller')";
-        
+                        ."('$title', $price, '$image', '$description', $rooms, $wc, '".date("Y-m-d")."', $id_seller)";
+
         try {
             $response = mysqli_query($db, $query);
-            echo "Propiedad Creado!";
+            echo "<p>Property Created!<p>";
 
-            header("Location: crearPropiedades.php");
-            exit();
         } catch (Exception  $e) {
-            echo "<p>Error: Propiedad No Creada: ".$e."<p>";
+            echo "<p>Error: Property not created: {$e->getMessage()}<p>";
         }
 
-    
+        try {
+            $query = "SELECT id, name FROM sellers;";
+            
+            $sellers = mysqli_query($db, $query);
+            
+            if (!$sellers) {
+                throw new Exception("Error: " . mysqli_error($db));
+            }
+        
+        } catch (Exception $e) {
+            echo "<p>Error: {$e->getMessage()}</p>";
+        }
     
     }
 
@@ -42,13 +47,9 @@
 <section>
     <h2>Propierties Form</h2>
     <div>
-        <form action="crearPropiedades.php" method="post" enctype="multipart/form-data">
+        <form action="createProperties.php" method="post">
             <fieldset>
                 <legend>Fill All Form Fields to Create a New Propierty</legend>
-                <div>
-                    <label for="id">ID</label>
-                    <input type="number" id="id" name="id">
-                </div>
                 <div>
                     <label for="title">Title</label>
                     <input required type="text" id="title" name="title" placeholder="Title of the propierty" >
@@ -79,12 +80,12 @@
                     <input type="number" id="garage" name="garage">
                 </div>
                 <div>
-                    <label for="timestamp">TimeStamp</label>
-                    <input type="date" id="timestamp"  name="timestamp">
-                </div>
-                <div>
-                    <label for="seller">ID Seller</label>
-                    <input required type="number" id="seller" name="seller">
+                    <label for="seller_id">Select the seller</label>
+                    <select name="seller_id" id="seller_id">
+                        <?php while ($seller = mysqli_fetch_assoc($sellers)) { ?>
+                            <option value="<?php echo $seller['id']; ?>"><?php echo $seller['name']; ?></option>
+                        <?php } ?>
+                    </select>
                 </div>
                 <div>
                     <button type="submit">Create a New Propierty</button>
