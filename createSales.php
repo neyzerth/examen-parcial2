@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 try {
     $querySeller = "SELECT id, name FROM sellers;";
-    $queryProperty = "SELECT id, title FROM propierties;";
+    $queryProperty = "SELECT id, title FROM vw_available_properties;";
 
     $sellers = mysqli_query($db, $querySeller);
     $properties = mysqli_query($db, $queryProperty);
